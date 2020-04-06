@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MovieAPI.Controllers.MoviesController.GetAllMovies">
+            <summary>
+            Gets all Movies from the database
+            </summary>
+            <returns>All Movies in Database</returns>
+            <response code="201">Returns all movies from the database</response>
+            <response code="400">If no movies where retrieved</response>
+        </member>
+        <member name="M:MovieAPI.Controllers.MoviesController.GetMoviesByTitle(System.String)">
+             <summary>
+             Gets movies with entered name
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get /GetMovieByTitle
+                 {
+                    "title": "Blade Runner 2049"
+                 }
+            
+             </remarks>
+             <param name="searchString"></param>
+             <returns>Movie with entered name</returns>
+             <response code="201">Returns Movie with entered name</response>
+             <response code="400">If no movie was retrieved</response>
+        </member>
+    </members>
+</doc>
